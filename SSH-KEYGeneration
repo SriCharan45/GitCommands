@@ -1,0 +1,7 @@
+# Generating SSH-KEYS
+1. At first we need to create a SSH-key in order to transfer files from our local system 
+2. For this we need to use a command 
+"ssh-keygen -t ed25519 -C "your_email@example.com""
+And after this just press enter and at last we get 2 files one is a private key and other is public key and its location
+3. We need to go to that specific location and copy the address of the public key where it is saved as pub extension.
+4. Go to Github and settings followed by ssh keys and click on new ssh and paste the address in it.
