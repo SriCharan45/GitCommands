@@ -1,0 +1,31 @@
+1. git init :
+    If we are creating a local file and if we want to turn it into a git repository then we need to use "git init" command
+
+2. git clone :
+    We need to prove that we are the host for the following account so it ask us the SSH-KEY (which is discussed) we need to paste that SSH-KEY 
+    command : "git clone SSH-KEY address"
+
+3. git add :
+    Used to track files and changes in GIT
+    command : "git add file-name"
+
+4. git status :
+    It gives the tracked and un-tracked file in the given folder 
+    command : "git status"
+
+5. git commit :
+    After adding files we need to commit the files i.e we need to save the file so we use
+    command : git commit -m "Any message you want" -m "description"
+
+6. git push :
+    If we are pushing the file into github for the first time then we need to do some changes
+    -> "git push origin master" - which gives error because the file which we created are local files but not in github so it gives us error. We had a short-cut for this
+    -> GOTO "https://github.com/" and create a new repository if you are creating a new repository for the first time only and go to clone and copy the SSH-KEY address
+    -> Once you copied the address we need to do the following :
+    command : "git remote add origin SSH-KEY address"
+    -> After this we need to do
+    command : "git remote -v"
+    -> After completion of this step the git understand that you are the host and you want to upload the files from your local machine
+    -> And , Finally we need to use 
+    command : "git push -u origin master" (for starting file we need to use this command)
+    From second file we can use "git push" command to push into that repository
